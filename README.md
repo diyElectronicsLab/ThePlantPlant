@@ -11,10 +11,7 @@ It contains information around the technical aspects of the seminar, namely rega
 
 Before we are diving deeper into the world of DIY Electronics and programming, we need to collect and get familiar with our set of tools. Your first exercise is to download our go-to code editor (*Visual Studio Code*) and a plugin for programming microcontrollers (*Platform I/O*).
 
-[Visual Studio Code](https://code.visualstudio.com/)
-
-- download and install the software
-- get familiar with the interface ([video]())
-- install the Platform I/O (PIO) extension ([video]())
-- get familiar with the PIO interface
+- download and install the software [Visual Studio Code](https://code.visualstudio.com/)
+- get familiar with the interface [video]([https://www.youtube.com/watch?v=VqCgcpAypFQ](https://www.youtube.com/watch?v=EUJlVYggR1Y))
+- install the Platform I/O (PIO) extension and check out the interface [video](https://www.youtube.com/watch?v=PYSy_PLjytQ)
 
