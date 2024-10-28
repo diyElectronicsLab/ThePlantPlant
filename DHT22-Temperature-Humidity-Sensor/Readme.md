@@ -7,7 +7,8 @@ The DHT22 is a sensor for temperature and humidity measurements. The sensor exis
 - **important: add a 10K resistor between DATA and 3V3 of ESP32**, see both red dots on image below, direction of resistor does not matter)
 - PIN 3 --> NC (not connected)
 - PIN 4 --> GND (connect to GND PIN of ESP32)
-- follow the connections in my photo or in the drawing below; they are basically the same and only look different.
+
+You can follow the connections in my photo or in the drawing below; they are basically the same and only look different.
 
 ![pinout](https://github.com/user-attachments/assets/727a5af7-77e1-41f5-a8da-ae4ef4a6f7d3)
 
