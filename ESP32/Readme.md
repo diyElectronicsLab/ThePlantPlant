@@ -41,8 +41,18 @@ Our ESP32 model is similar to the 38 pin version of the ESP32 Dev Kit made by es
 
 # Getting Started
 
-The first thing we want to do is a basic test that shows us if our computer can connect to the microcontroller and if everything is working correctly. It is called a "Hello World" program - we will upload code to the ESP32 that lets it blink.
+The first thing we want to do are a basic tests that shows us if our computer can connect to the microcontroller and if everything is working correctly. 
 
 ## Hello World: Blink
 
+Our first "Hello World" program will let the ESP32 blink in a certain sequence. We can decide how long the LED will be turned on and off.
 
+### Preparations
+- open a new window in VScode and click on the alien head icon to open the Platform I/O extension
+- create a new project (toolbar on the left, scroll down if you need to)
+- enter a name and choose the board: "Espressif ESP32 Dev Module"
+- choose a location for the project and click finish.
+- go to the "src" folder in the side bar and click on "main.cpp" (this is our main c++ file that will run on the ESP32)
+
+### The Code
+You can find the code needed in this repository. 
