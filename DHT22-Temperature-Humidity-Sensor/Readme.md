@@ -49,4 +49,5 @@ We need that resistor in order to get stable readings from the sensor. The resis
 ## Additional information:
 - [Tutorial on esp32.io](https://esp32io.com/tutorials/esp32-dht22?utm_content=cmp-true)
 - [Adafruit Tutorial DHT22](https://learn.adafruit.com/dht/overview)
-- [DHT22 datasheet](https://www.sparkfun.com/datasheets/Sensors/Temperature/DHT22.pdf)
+- [DHT22 datasheet](https://www.mouser.com/datasheet/2/737/dht-932870.pdf?srsltid=AfmBOoqlR41y4H4svlrOUtiWI7SC2uF_3fVUvWm7hDA6tllDXO0nn9ck)
+- [DHT22 datasheet #2](https://www.sparkfun.com/datasheets/Sensors/Temperature/DHT22.pdf)
