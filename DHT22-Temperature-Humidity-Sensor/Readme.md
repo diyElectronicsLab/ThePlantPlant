@@ -14,6 +14,7 @@ The DHT22 is a sensor for temperature and humidity measurements. The sensor exis
 We need that resistor in order to get stable readings from the sensor. The resistor is a pull-up resistor. It ensures that the pin of the ESP32 is normally kept at a HIGH level and is only LOW if intended. If we do not use this resistor, the pin will have inconsistant readings. For more information see [pull-up resistor](https://learn.sparkfun.com/tutorials/pull-up-resistors/all)
 
 ![dht11-schema](https://github.com/user-attachments/assets/1b0c1225-c1c7-448d-8d85-ba437e9d7799)
+![esp32 dht22](https://esp32io.com/images/tutorial/esp32-dht22-temperature-humidity-sensor-wiring-diagram.jpg)
 
 ## Additional information:
 - [Tutorial on esp32.io]([https://www.example.com](https://esp32io.com/tutorials/esp32-dht22?utm_content=cmp-true))
