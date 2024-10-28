@@ -53,6 +53,7 @@ Our first "Hello World" program will let the ESP32 blink in a certain sequence. 
 - enter a name and choose the board: "Espressif ESP32 Dev Module"
 - choose a location for the project and click finish.
 - go to the "src" folder in the side bar and click on "main.cpp" (this is our main c++ file that will run on the ESP32)
+- copy the code inside the folder "ESP32-Blink" from the file "main.cpp" into your own "main.cpp" file.
 
 ### The Code
 You can find the code needed in the ESP32-Blink folder of this repository. What the code is doing:
@@ -88,3 +89,38 @@ void loop()
 `
 - the code inside the loop(){} block will run over and over again in an endless loop.
 - we tell the microcontroller to continouesly turn the LED_PIN on `digitalWrite(LED_PIN, HIGH)`, wait for one second or 1000 milliseconds `delay (1000)`, turn the pin off `digitalWrite(LED_PIN, LOW)` and again wait for 1000 milliseconds `delay (1000)`. Thats all!
+
+### Compile and Upload
+
+Now we are ready to compile / "Build" (ckeck if our code fits the rules of Arduino and c/c++) and upload the code to our ESP32!
+
+- go to your main.cpp file and click on the little hook symbol in the upper right corner. Your code will be compiled: it is checked for errors and converted to machine code that the ESP32 can understand. We will not see this machine code - that`s ok because we would not really be able to read it.
+- click on the little arrow next to the compile symbol and click on "upload" in the dropdown. Your Code will be uploaded to the ESP32 and it should start to blink! 
+
+
+## Hello World: Serial Monitor
+
+Our second "Hello World" program will establish a communication port between the ESP32 and our computer so we will be able to send messages between both devices.
+
+### Preparations
+- click on the file "platformio.ini" in the sidebar of the "files" tab.
+- add the line `monitor_speed = 9600` to the bottom of the file and safe.
+- copy the code inside the folder "ESP32-Serial" from the file "main.cpp" and replace the code in your "main.cpp" file with the new code example.
+
+### The Code 
+
+You will notice that the code did not change too much. We only added a few lines that allow us to communicate and send messages from the ESP32 to our computer.
+
+- the line `Serial.begin(9600);` opens a communication channel over the USB cable. 9600 is the speed at which we are communicating, it must fit the speed you added to the platformio.ini file `monitor_speed = 9600`.
+- the line `  Serial.println("HELLO CLASSROOM!");` sends a message "HELLO CLASSROOOM" from the ESP32 to our computer once in the beginning.
+- further down, you see the same line of code but with another message. Whenever the LED is on, we want to send "LED IS ON", when its off we send "LED IS OFF".
+- you can see that the code is executed from top to bottom and line by line.
+
+### Compile, Upload and Receive the Messages
+
+Again, we are ready to compile and upload the code. Additionally, we will open the Serial Monitor to receive the messages we are sending.
+
+- go to your main.cpp file and click on the little hook symbol in the upper right corner. Your code will be compiled.
+- click on the little arrow next to the compile symbol and click on "upload" in the dropdown.
+- once the code is uploaded, click on the "plug" symbol next to the upload/compile button. A new terminal window will open in the bottom and you will see the messages!
+
