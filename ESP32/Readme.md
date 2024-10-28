@@ -21,4 +21,6 @@ The ESP32 is a microcontroller, and therefore it is generally similar to - for e
 - a little bit less documentation online
 - most but not all the Arduino libraries available
 - incompatibilities with some sensor modules due to 3.3V logic; additional parts needed (voltage regulator to 3.3V or voltage divider).
+- most ESP Dev Kits are too large for a single breadboard.
+- our ESP fits on a breadboard, however and for that reason, the pin labels are in the bottom..
 
