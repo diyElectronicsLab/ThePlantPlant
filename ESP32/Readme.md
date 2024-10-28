@@ -24,3 +24,12 @@ The ESP32 is a microcontroller, and therefore it is generally similar to - for e
 - most ESP Dev Kits are too large for a single breadboard.
 - our ESP fits on a breadboard, however and for that reason, the pin labels are in the bottom..
 
+# Pin Configurations
+
+Our ESP32 model is similar to the 38 pin version of the ESP32 Dev Kit made by espressif. The following image gives an overview of the capabilities each pin has.
+
+*Please Note:*
+- *the numbers in the bottom of our ESP32 correspond to the actual GPIO numbering. GPIO19 on the image = 19 on our board.
+- *the curvy line next to a pin on the drawing marks a PWM pin. These pins can be used to immitate an analog output signal using PWM - pulse width modulation.*
+- *GPIO 6,7,8,9,10,11 can not be used by us*
+- *the "ADC" pins can be used as analog input pins. ADC2 pins can not be used when Wifi is turned on (GPIO 25,26,27,14,12,13,15,2,0,4).*
