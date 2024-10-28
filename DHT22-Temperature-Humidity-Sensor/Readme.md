@@ -1,1 +1,1 @@
-#DHT 22 Temperature and Humidity Sensor
+# DHT 22 Temperature and Humidity Sensor
