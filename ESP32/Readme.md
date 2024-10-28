@@ -97,6 +97,8 @@ Now we are ready to compile / "Build" (ckeck if our code fits the rules of Ardui
 - go to your main.cpp file and click on the little hook symbol in the upper right corner. Your code will be compiled: it is checked for errors and converted to machine code that the ESP32 can understand. We will not see this machine code - that`s ok because we would not really be able to read it.
 - click on the little arrow next to the compile symbol and click on "upload" in the dropdown. Your Code will be uploaded to the ESP32 and it should start to blink! 
 
+![IMG_7808](https://github.com/user-attachments/assets/e7033a8f-7dae-4b0c-a2fe-ad56e2c33116)
+
 
 ## Hello World: Serial Monitor
 
@@ -123,4 +125,6 @@ Again, we are ready to compile and upload the code. Additionally, we will open t
 - go to your main.cpp file and click on the little hook symbol in the upper right corner. Your code will be compiled.
 - click on the little arrow next to the compile symbol and click on "upload" in the dropdown.
 - once the code is uploaded, click on the "plug" symbol next to the upload/compile button. A new terminal window will open in the bottom and you will see the messages!
+
+![SerialOut](https://github.com/user-attachments/assets/e793218f-48bf-46eb-8fd2-d4206fadf262)
 
