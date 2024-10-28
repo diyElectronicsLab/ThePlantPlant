@@ -6,7 +6,7 @@ The ESP32 is a microcontroller, and therefore it is generally similar to - for e
 
 ### Whats so cool about ESP32:
 
-- the ESP32 has WIFI and Bluetooth on board! 
+- the ESP32 has WIFI and Bluetooth on board
 - the ESP32 runs on 3.3V, the Arduino Uno runs entirely on 5V. This is very important, because you can easily fry the ESP32 when applying too much voltage (for example 5V) to its pins. That can happen if you use your Arduino sensors with 5V logic directly on the ESP pins.
 - depending on the version, the ESP32 has more GPIO pins than the Arduino Uno, although not all of them can be used for general input/output purposes.
 - the ESP32 is faster and has more memory. On top of that: it is cheaper than the Arduino.
@@ -29,6 +29,8 @@ The ESP32 is a microcontroller, and therefore it is generally similar to - for e
 # Pin Configurations
 
 Our ESP32 model is similar to the 38 pin version of the ESP32 Dev Kit made by espressif. The following image gives an overview of the capabilities each pin has.
+
+![doc-esp32-pinout-reference-wroom-devkit](https://github.com/user-attachments/assets/1454dd5c-e0d4-4fc4-acd8-fd1eb1b5e7ae)
 
 *Please Note:*
 - *the numbers in the bottom of our ESP32 correspond to the actual GPIO numbering. GPIO19 on the image = 19 on our board.
