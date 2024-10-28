@@ -26,7 +26,7 @@ We need that resistor in order to get stable readings from the sensor. The resis
 - choose the board name "Espressif ESP32 Dev Module"
 - framework: Arduino, choose location and click "finish"
 - in the side bar on the left, click on "platformio.ini"
-- add 'monitor_speed = 115200' to bottom of that file and save. This will allow using the serial monitor
+- add 'monitor_speed = 9600' to bottom of that file and save. This will allow using the serial monitor
 - go to "PIO Home" or click on PIO icon, click on "libraries" and search for DHT22 sensor library by Adafruit. Click on "Add to project", choose your project name and click "add".
 - go back to your "platformio.ini" file. You will find "lib_deps = adafruit/DHT sensor library@^VERSION" added in the bottom.
 - go back to PIO Home -> libraries -> DHT22 sensor library (Adafruit) and look at the basic example code on the front page. As you can see below, I added <Arduino.h> and changed the DATA pin. The rest is the same.
