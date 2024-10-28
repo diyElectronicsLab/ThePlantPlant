@@ -20,16 +20,20 @@ We need that resistor in order to get stable readings from the sensor. The resis
 ![esp32 dht22](https://esp32io.com/images/tutorial/esp32-dht22-temperature-humidity-sensor-wiring-diagram.jpg)
 ![dht11-schema](https://github.com/user-attachments/assets/1b0c1225-c1c7-448d-8d85-ba437e9d7799)
 
-## Code
+## Getting Started
 
 - open VScode, click on Platform I/O icon and then on "new project"
 - choose the board name "Espressif ESP32 Dev Module"
 - framework: Arduino, choose location and click "finish"
+
+Serial Monitor
 - in the side bar on the left, click on "platformio.ini"
 - add 'monitor_speed = 9600' to bottom of that file and save. This will allow using the serial monitor
+
+Include Library
 - go to "PIO Home" or click on PIO icon, click on "libraries" and search for DHT22 sensor library by Adafruit. Click on "Add to project", choose your project name and click "add".
-- go back to your "platformio.ini" file. You will find "lib_deps = adafruit/DHT sensor library@^VERSION" added in the bottom.
-- go back to PIO Home -> libraries -> DHT22 sensor library (Adafruit) and look at the basic example code on the front page. As you can see below, I added <Arduino.h> and changed the DATA pin. The rest is the same.
+- go back to your "platformio.ini" file. You will find "lib_deps = adafruit/DHT sensor library@^VERSION" added in the bottom. Ready to go!
+- go back to PIO Home -> libraries -> DHT22 sensor library (Adafruit) and look at the basic example code on the front page. You can adjust this code to your needs (change DHTPIN!) or look at the "DHT22 basic example" code in this repo.
 
 ## Additional information:
 - [Tutorial on esp32.io]([https://www.example.com](https://esp32io.com/tutorials/esp32-dht22?utm_content=cmp-true))
