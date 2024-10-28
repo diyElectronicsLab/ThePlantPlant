@@ -11,10 +11,10 @@ The ESP32 is a microcontroller, and therefore it is generally similar to - for e
 - cool: the ESP32 can be programmed using the Arduino programming language.
 - much more that goes to deep for now..
 
-*Please Note: 
-- always double check the output voltages of your devices (sensors, ...) before connecting them to the ESP32 directly.
-- some of the ESP pins are reserved for internal processes and things get weird if you try to use them for your projects.
-- some of the analog GPIO pins can not be used when Wifi is turned on.*
+*Please Note:* 
+- *always double check the output voltages of your devices (sensors, ...) before connecting them to the ESP32 directly.*
+- *some of the ESP pins are reserved for internal processes and things get weird if you try to use them for your projects.*
+- *some of the analog GPIO pins can not be used when Wifi is turned on.*
 
 ### Some downsides of the ESP32:
 - longer compile and upload times
