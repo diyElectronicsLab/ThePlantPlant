@@ -37,6 +37,8 @@ You can follow the connections in my photo or in the drawing below; they are bas
 ### Upload!
 - double check your connections, compile the code, connect your board and hit upload.
 - Click on the serial monitor button (the power plug icon in the upper right) to see the measurements
+
+### Barebones
 - feel free to check out the code "barebones" in this repo to see how little you need to get it working. The basic example has a lot of code that is not really necessary.
 
 
