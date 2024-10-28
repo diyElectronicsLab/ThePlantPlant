@@ -2,8 +2,8 @@
 
 The DHT22 is a sensor for temperature and humidity measurements. The sensor exists as a 3 pin "breakout board" (the sensor is soldered on a kind of adapter) and as the raw 4 pin sensor module. At university, we are using the 4 pin version:
 
-- PIN 1 --> VCC (3-5V, connect to 3.3V "3V3" PIN or 5V PIN of ESP32)
-- PIN 2 --> DATA (communication pin, connect **via 10K resistor** to PIN of ESP32)
+- PIN 1 --> VCC (3-5V, connect to 3.3V "3V3" PIN of ESP32)
+- PIN 2 --> DATA (communication pin, connect to GPTO PIN 33 of ESP32, **important: add a 10K resistor between DATA and 3V3 of ESP32**)
 - PIN 3 --> NC (not connected)
 - PIN 4 --> GND (connect to GND PIN of ESP32)
 
