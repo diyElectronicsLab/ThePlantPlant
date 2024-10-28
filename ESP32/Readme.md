@@ -1,5 +1,7 @@
 # ESP32
 
+![esp32](https://github.com/user-attachments/assets/f43872e1-5f64-4dd2-a360-c91a35e8ee3e)
+
 The ESP32 is a microcontroller. As a microcontroller, it is generally similar to - for example - an Arduino Uno (you might have worked with that one in the past). However, there are some important differences:
 
 - unlike the Arduino Uno, the ESP32 has WIFI and Bluetooth on board!
