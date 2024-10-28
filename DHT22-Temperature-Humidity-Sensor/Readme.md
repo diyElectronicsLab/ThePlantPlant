@@ -42,7 +42,7 @@ You can follow the connections in my photo or in the drawing below; they are bas
 - feel free to check out the code "barebones" in this repo to see how little you need to get it working. The basic example has a lot of code that is not really necessary.
 
 
-## Why we need to add a resistor between DATA and ESP32*
+## Why we need to add a resistor between DATA and ESP32
 
 We need that resistor in order to get stable readings from the sensor. The resistor is a pull-up resistor. It ensures that the pin of the ESP32 is normally kept at a HIGH level and is only LOW if intended. If we do not use this resistor, the pin will have inconsistant readings. For more information see [pull-up resistor](https://learn.sparkfun.com/tutorials/pull-up-resistors/all)
 
