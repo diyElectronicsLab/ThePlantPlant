@@ -55,4 +55,9 @@ Our first "Hello World" program will let the ESP32 blink in a certain sequence. 
 - go to the "src" folder in the side bar and click on "main.cpp" (this is our main c++ file that will run on the ESP32)
 
 ### The Code
-You can find the code needed in this repository. 
+You can find the code needed in the ESP32-Blink folder of this repository. What the code is doing:
+
+`
+#include <Arduino.h>
+`
+
