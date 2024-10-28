@@ -1,8 +1,6 @@
 # ESP32
 
-The ESP32 is a microcontroller. As a microcontroller, it is generally similar to - for example - an Arduino Uno (you might have worked with that one in the past). However, there are some important differences.
-
-### Some of them are:
+The ESP32 is a microcontroller. As a microcontroller, it is generally similar to - for example - an Arduino Uno (you might have worked with that one in the past). However, there are some important differences:
 
 - unlike the Arduino Uno, the ESP32 has WIFI and Bluetooth on board!
 - the Arduino Uno runs entirely on 5V, the ESP32 runs on 3.3V. This is very important, because you can easily fry the ESP32 when applying too much voltage (for example 5V) to its pins.
