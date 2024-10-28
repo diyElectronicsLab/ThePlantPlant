@@ -29,6 +29,7 @@ The ESP32 is a microcontroller, and therefore it is generally similar to - for e
 # Pin Configurations
 
 Our ESP32 model is similar to the 38 pin version of the ESP32 Dev Kit made by espressif. The following image gives an overview of the capabilities each pin has.
+<b>
 
 ![doc-esp32-pinout-reference-wroom-devkit](https://github.com/user-attachments/assets/1454dd5c-e0d4-4fc4-acd8-fd1eb1b5e7ae)
 
@@ -37,3 +38,11 @@ Our ESP32 model is similar to the 38 pin version of the ESP32 Dev Kit made by es
 - *the curvy line next to a pin on the drawing marks a PWM pin. These pins can be used to immitate an analog output signal using PWM - pulse width modulation.*
 - *GPIO 6,7,8,9,10,11 can not be used by us*
 - *the "ADC" pins can be used as analog input pins. ADC2 pins can not be used when Wifi is turned on (GPIO 25,26,27,14,12,13,15,2,0,4).*
+
+# Getting Started
+
+The first thing we want to do is a basic test that shows us if our computer can connect to the microcontroller and if everything is working correctly. It is called a "Hello World" program - we will upload code to the ESP32 that lets it blink.
+
+## Hello World: Blink
+
+
