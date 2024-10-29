@@ -99,10 +99,11 @@ Now we are ready to compile / "Build" (ckeck if our code fits the rules of Ardui
 - go to your main.cpp file and click on the little hook symbol in the upper right corner. Your code will be compiled: it is checked for errors and converted to machine code that the ESP32 can understand. We will not see this machine code - that`s ok because we would not really be able to read it.
 - click on the little arrow next to the compile symbol and click on "upload" in the dropdown. Your Code will be uploaded to the ESP32 and it should start to blink! 
 
-*Please Note:
+*Important Note:
 If you have a Windows machine, you should check if your ESP32 will show up in the COM port list inside of Platform I/O --> devices. If not, you need to install a driver for the USB chip.*
 - [Visit this website](https://randomnerdtutorials.com/install-esp32-esp8266-usb-drivers-cp210x-windows/) and follow the tutorial
 - [direct link to the driver](https://www.silabs.com/developers/usb-to-uart-bridge-vcp-drivers?tab=downloads) --> choose "CP210x Windows Drivers"
+
 
 ## Hello World: Serial Monitor
 
