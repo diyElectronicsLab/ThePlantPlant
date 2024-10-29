@@ -20,11 +20,45 @@ Once you have both circuits set up again and you made sure that everything is co
 - add both libraries for the DHT22 sensor and the servo motor to your project
 - go to the "ESP32-DHT22-SG90" folder in this repository and copy/paste the code inside the main.cpp file
 
+--> compile and upload: you should see the sensor readings in your serial monitor. Try to exhale on the sensor. Whenever the humidity goes over 75%, your servo should react!
+
+## The Idea
+
+With this simple program, I want to demostrate how a sensor and an actuator can interact with each other. Once the sensor produces values that exceed a certain threshold, the actuator should react and - in case of a feedback mechanism - have an influence on the sensor value through its physical action. 
+
+Now in case of this little setup, our servo reacts whenever the humidity value exceeds a certain threshold (for example 75%, but you can also choose your own). The servo performs a "waving" geusture - so if you were to attach some kind of "flap" to the servo and place it close to the sensor, it could bring fresh air into the sensor and help the humidity value go donw.
+
 ## The Code
 
-Looking at the code, you will notice that it basically consists of a cobination of both codes we were using for each device on its own. Only the loop function is a bit different, and we will have a closer look to understand whats happening:
+Looking at the code, you will notice that it basically consists of a cobination of both codes we were using for each device on its own. Only the loop function is a bit different and may look intimidating at first glance. No worries, we will have a closer look to understand whats happening:
 
+`void setup(){}` 
+--> this code and the code above the setup function should look familiar, just in another order.
 
+`
+dht.temperature().getEvent(&event);
+const int temperature = event.temperature;
+dht.humidity().getEvent(&event);
+const int humidity = event.relative_humidity;
+`
+--> in this code block, we are saving the sensor readings for temperature and humidity in their own variable, so we can use it later on in our code.
 
+`
+  const int HUMIDITY_THRESHOLD = 75;
+`
+--> with this line, we make a variable in which we save the number 75. This will be our threshold for the humidity value at which the servo should start reacting.
+
+`
+ if (humidity >= HUMIDITY_THRESHOLD)
+    {
+      // go to position 90
+      myServo.write(90);
+      delay(100);
+      // go to position 45
+      myServo.write(45);
+      delay(100);
+    }
+`
+--> in this if statement, we check if the humidity value is greater or equal to the threshold (the number 75). If yes, we drive the servo back and forth between 45 and 90 degrees.
 
 
