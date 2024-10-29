@@ -32,7 +32,8 @@ Now in case of this little setup, our servo reacts whenever the humidity value e
 
 Looking at the code, you will notice that it basically consists of a cobination of both codes we were using for each device on its own. Only the loop function is a bit different and may look intimidating at first glance. No worries, we will have a closer look to understand whats happening:
 
-`void setup(){}` <br>
+```void setup(){}```
+<br>
 --> this code and the code above the setup function should look familiar, just in another order.
 
 ```
@@ -44,9 +45,10 @@ const int humidity = event.relative_humidity;
 <br>
 --> in this code block, we are saving the sensor readings for temperature and humidity in their own variable, so we can use it later on in our code.
 
-`
+```
   const int HUMIDITY_THRESHOLD = 75;
-`<br>
+```
+<br>
 --> with this line, we make a variable in which we save the number 75. This will be our threshold for the humidity value at which the servo should start reacting.
 
 ```
