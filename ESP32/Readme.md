@@ -135,4 +135,8 @@ Again, we are ready to compile and upload the code. Additionally, we will open t
 - click on the little arrow next to the compile symbol and click on "upload" in the dropdown.
 - once the code is uploaded, click on the "plug" symbol next to the upload/compile button. A new terminal window will open in the bottom and you will see the messages!
 
+# More Information
+- [video tutorial: blink program](https://www.youtube.com/watch?v=xrAgUXFdrs8)
+- [thorough video tutorial on esp32 and platform I/O](https://www.youtube.com/watch?v=tc3Qnf79Ny8&t=530s)
+
 
