@@ -21,14 +21,21 @@ Lets connect the motor to our ESP32 microcontroller! The motor has 3 leads:
 
 Once you connected the servo motor to your ESP32 microcontroller, you can plug it into your computer and start coding!
 
+### Preparations
+
 - open VScode and create a new project in platform I/O (as usual)
 - click on the PIO icon (alien head), then click on "libraries"
 - search for the "servo ESP32" library **!important!: Version 1.0.3** by Jaroslav Paral and add it to your project
 - check the example code --> this is a port of the original arduino servo library, it is very easy to use! Be aware: all other versions apart from 1.0.3 are buggy.
 
+### The Code
+
 - click on "src" and your main.cpp file
 - copy and paste the code from the "ESP32-servo-basic" folder of this repository
 - compile and then upload the code to your ESP32 board
+- Hurray: if everything went fine, your servo should be turning from one end to the other and back!
+
+
 
 # More Information
 
