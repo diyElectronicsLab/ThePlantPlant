@@ -26,7 +26,7 @@ Once you have both circuits set up again and you made sure that everything is co
 
 With this simple program, I want to demostrate how a sensor and an actuator can interact with each other. Once the sensor produces values that exceed a certain threshold, the actuator should react and - in case of a feedback mechanism - have an influence on the sensor value through its physical action. 
 
-Now in case of this little setup, our servo reacts whenever the humidity value exceeds a certain threshold (for example 75%, but you can also choose your own). The servo performs a "waving" geusture - so if you were to attach some kind of "flap" to the servo and place it close to the sensor, it could bring fresh air into the sensor and help the humidity value go donw.
+Now in case of this little setup, our servo reacts whenever the humidity value exceeds a certain threshold (for example 75%, but you can also choose your own). The servo performs a "waving" geusture - so if you were to attach some kind of "flap" to the servo and place it close to the sensor, it could bring fresh air into the sensor and help the humidity value decrease again, until it reaches a level below the threshold.
 
 ## The Code
 
