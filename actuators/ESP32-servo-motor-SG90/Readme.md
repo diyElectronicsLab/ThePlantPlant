@@ -11,11 +11,24 @@ In turn, this means that we can tell the motor exactly how far it should spin an
 Lets connect the motor to our ESP32 microcontroller! The motor has 3 leads:
 - Brown / left = GND --> ground, connect to GND pin of ESP32
 - Red / middle = VCC --> power, connect to 5V pin of ESP32 
-- Orange / right = SIG --> singal, connect to GPIO 13 or any other PWM pin (marked with a wavy line)
+- Orange / right = SIG --> singal, connect to GPIO 26 or any other PWM pin (marked with a wavy line)
 
 ![servo esp32 connections](https://esp32io.com/images/tutorial/esp32-servo-motor-wiring-diagram.jpg)
 
 *Please Note: if you are using any larger servo motor than this miniature version, you need to connect an external power supply. If you are using a regular DC or stepper motor, you need additional motor drivers. This is important – you can easily damage the ESP32 microcontroller by pulling too much current from its 5V pin.*
+
+## Basic Servo Programming
+
+Once you connected the servo motor to your ESP32 microcontroller, you can plug it into your computer and start coding!
+
+- open VScode and create a new project in platform I/O (as usual)
+- click on the PIO icon (alien head), then click on "libraries"
+- search for the "servo ESP32" library by Jaroslav Paral and add it to your project
+- check the example code --> this is a port of the original arduino servo library, it is very easy to use!
+
+- click on "src" and your main.cpp file
+- copy and paste the code from the "ESP32-servo-basic" folder of this repository
+- compile and then upload the code to your ESP32 board
 
 # More Information
 
