@@ -23,8 +23,8 @@ Once you connected the servo motor to your ESP32 microcontroller, you can plug i
 
 - open VScode and create a new project in platform I/O (as usual)
 - click on the PIO icon (alien head), then click on "libraries"
-- search for the "servo ESP32" library by Jaroslav Paral and add it to your project
-- check the example code --> this is a port of the original arduino servo library, it is very easy to use!
+- search for the "servo ESP32" library **!important!: Version 1.0.3** by Jaroslav Paral and add it to your project
+- check the example code --> this is a port of the original arduino servo library, it is very easy to use! Be aware: all other versions apart from 1.0.3 are buggy.
 
 - click on "src" and your main.cpp file
 - copy and paste the code from the "ESP32-servo-basic" folder of this repository
