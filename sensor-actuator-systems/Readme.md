@@ -32,7 +32,7 @@ Now in case of this little setup, our servo reacts whenever the humidity value e
 
 Looking at the code, you will notice that it basically consists of a cobination of both codes we were using for each device on its own. Only the loop function is a bit different and may look intimidating at first glance. No worries, we will have a closer look to understand whats happening:
 
-```void setup(){}```
+`void setup(){}`<br>
 --> this code and the code above the setup function should look familiar, just in another order.
 <br>
 ```
