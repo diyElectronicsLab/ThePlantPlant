@@ -37,19 +37,19 @@ Once you connected the servo motor to your ESP32 microcontroller, you can plug i
 
 Step by Step:
 
-`#include <Servo.h>`
+`#include <Servo.h>` <br>
 --> includes the servo library we just added to our project
 
-`#define SERVO_PIN 26`
+`#define SERVO_PIN 26`<br>
 --> assigns GPIO pin number 26 to the variable "SERVO_PIN"
 
-`Servo myServo;`
+`Servo myServo;`<br>
 --> creates an instance of the Servo class
 
-`  myServo.attach(SERVO_PIN);`
+`  myServo.attach(SERVO_PIN);`<br>
 --> in setup: defines GPIO pin number 26 / "SERVO_PIN" to be the servo control pin
 
-`myServo.write(0);`
+`myServo.write(0);`<br>
 --> in loop: drives the servo to a certain position between 0 and 180 degree
 
 
