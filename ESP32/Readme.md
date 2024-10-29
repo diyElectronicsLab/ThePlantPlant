@@ -71,16 +71,16 @@ You can find the code needed in the ESP32-Blink folder of this repository. What 
 - assign GPIO pin number 2 to the "name" (the variable) "LED_PIN", so we can use it throughout our code without remembering the pin number everytime we want to do something with it.
 - GPIO number 2 is connected to the onboard LED light of the ESP32.
 
-`
+```
 void setup()
 {
   pinMode(LED_PIN, OUTPUT);
 }
-`
+```
 - the code inside the setup(){} block will only run once in the beginning.
 - we define the LED_PIN (GPIO pin number 2) as an output pin. In the OUTPUT mode, a pin can produce a voltage signal between 0 and 3.3 V.
 
-`
+```
 void loop()
 {
   digitalWrite(LED_PIN, HIGH);
@@ -88,7 +88,7 @@ void loop()
   digitalWrite(LED_PIN, LOW);
   delay(1000);
 }
-`
+```
 - the code inside the loop(){} block will run over and over again in an endless loop.
 - we tell the microcontroller to continouesly turn the LED_PIN on `digitalWrite(LED_PIN, HIGH)`, wait for one second or 1000 milliseconds `delay (1000)`, turn the pin off `digitalWrite(LED_PIN, LOW)` and again wait for 1000 milliseconds `delay (1000)`. Thats all!
 
