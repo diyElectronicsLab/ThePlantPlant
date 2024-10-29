@@ -35,12 +35,13 @@ Looking at the code, you will notice that it basically consists of a cobination 
 `void setup(){}` <br>
 --> this code and the code above the setup function should look familiar, just in another order.
 
-`
+```
 dht.temperature().getEvent(&event);
 const int temperature = event.temperature;
 dht.humidity().getEvent(&event);
 const int humidity = event.relative_humidity;
-`<br>
+```
+<br>
 --> in this code block, we are saving the sensor readings for temperature and humidity in their own variable, so we can use it later on in our code.
 
 `
