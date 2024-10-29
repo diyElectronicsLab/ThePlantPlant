@@ -20,7 +20,7 @@ Once you have both circuits set up again and you made sure that everything is co
 - add both libraries for the DHT22 sensor and the servo motor to your project
 - go to the "ESP32-DHT22-SG90" folder in this repository and copy/paste the code inside the main.cpp file
 
---> compile and upload: you should see the sensor readings in your serial monitor. Try to exhale on the sensor. Whenever the humidity goes over 75%, your servo should react!
+--> compile and upload: you should see the sensor readings in your serial monitor. Try to breathe on the sensor. Whenever the humidity goes over 75%, your servo should react!
 
 ## The Idea
 
