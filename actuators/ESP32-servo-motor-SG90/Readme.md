@@ -55,4 +55,6 @@ Step by Step:
 
 # More Information
 
-- [tutorial on espio](https://esp32io.com/tutorials/esp32-servo-motor)
+- [servo tutorial on espio](https://esp32io.com/tutorials/esp32-servo-motor)
+- [SG90 datasheet](https://www.friendlywire.com/projects/ne555-servo-safe/SG90-datasheet.pdf)
+- [video tutorial SG90 / ESP32 using another library](https://www.youtube.com/watch?v=dJAlkrXbfbQ)
