@@ -44,7 +44,7 @@ Our ESP32 model is similar to the 38 pin version of the ESP32 Dev Kit made by es
 
 The first thing we want to do are a basic tests that shows us if our computer can connect to the microcontroller and if everything is working correctly. 
 
-## Hello World: Blink
+## 1) Hello World: Blink
 
 ![IMG_7808](https://github.com/user-attachments/assets/e7033a8f-7dae-4b0c-a2fe-ad56e2c33116)
 
@@ -106,7 +106,7 @@ If you have a Windows machine, you should check if your ESP32 will show up in th
 - [direct link to the driver](https://www.silabs.com/developers/usb-to-uart-bridge-vcp-drivers?tab=downloads), choose "CP210x Windows Drivers"
 <br><br>
 
-## Hello World: Serial Monitor
+## 2) Hello World: Serial Monitor
 
 ![SerialOut](https://github.com/user-attachments/assets/e793218f-48bf-46eb-8fd2-d4206fadf262)
 
