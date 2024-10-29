@@ -18,24 +18,28 @@ void setup()
 
 void loop()
 {
-  // in +1 steps from 0 to 180
-  for (int posDegrees = 0; posDegrees <= 180; posDegrees++)
-  {
-    // drive servo to +1 step from 0 to 180
-    myServo.write(posDegrees);
-    // print +1 step from 0 to 180 to serial monitor
-    Serial.println(posDegrees);
-    // give servo 20 milliseconds to react
-    delay(20);
-  }
-  // in -1 steps from 180 to 0
-  for (int posDegrees = 180; posDegrees >= 0; posDegrees--)
-  {
-    // drive servo to -1 step from 180 to 0
-    myServo.write(posDegrees);
-    // print -1 step from 180 to 0 to serial monitor
-    Serial.println(posDegrees);
-    // give servo 20 milliseconds to react
-    delay(20);
-  }
+  // drive servo to 0 degree position
+  myServo.write(0);
+  Serial.println("0");
+  delay(500);
+
+  // drive servo to 45 degree position
+  myServo.write(45);
+  Serial.println("45");
+  delay(500);
+
+  // drive servo to 90 degree position
+  myServo.write(90);
+  Serial.println("90");
+  delay(500);
+
+  // drive servo to 135 degree position
+  myServo.write(135);
+  Serial.println("135");
+  delay(500);
+
+  // drive servo to 180 degree position
+  myServo.write(180);
+  Serial.println("180");
+  delay(1000);
 }
