@@ -31,7 +31,8 @@ The ESP32 is a microcontroller, and therefore it is generally similar to - for e
 Our ESP32 model is similar to the 38 pin version of the ESP32 Dev Kit made by espressif. The following image gives an overview of the capabilities each pin has.
 <b>
 
-![doc-esp32-pinout-reference-wroom-devkit](https://github.com/user-attachments/assets/1454dd5c-e0d4-4fc4-acd8-fd1eb1b5e7ae)
+![ESP32-pinout-jpg-small](https://github.com/user-attachments/assets/3b3decb9-74ea-4921-bfb1-a7732dfb5523)
+
 
 *Please Note:*
 - *the numbers in the bottom of our ESP32 correspond to the actual GPIO numbering. GPIO19 on the image = 19 on our board.
