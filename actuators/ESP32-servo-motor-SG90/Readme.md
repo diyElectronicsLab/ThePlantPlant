@@ -9,6 +9,14 @@ In turn, this means that we can tell the motor exactly how far it should spin an
 ## Connecting SG90 to ESP32
 
 Lets connect the motor to our ESP32 microcontroller! The motor has 3 leads:
-- Brown / left = GND --> connect to GND pin of ESP32
-- Red / middle = VCC --> connect to 5V pin of ESP32 
-- Orange / right = SIG --> connect to GPIO 13 or any other PWM pin (marked with a wavy line)
+- Brown / left = GND --> ground, connect to GND pin of ESP32
+- Red / middle = VCC --> power, connect to 5V pin of ESP32 
+- Orange / right = SIG --> singal, connect to GPIO 13 or any other PWM pin (marked with a wavy line)
+
+![servo esp32 connections](https://esp32io.com/images/tutorial/esp32-servo-motor-wiring-diagram.jpg)
+
+*Please Note: if you are using any larger servo motor than this miniature version, you need to connect an external power supply. If you are using a regular DC or stepper motor, you need additional motor drivers. This is important – you can easily damage the ESP32 microcontroller by pulling too much current from its 5V pin.*
+
+# More Information
+
+- [tutorial on espio](https://esp32io.com/tutorials/esp32-servo-motor)
