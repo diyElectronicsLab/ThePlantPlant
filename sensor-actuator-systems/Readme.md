@@ -33,24 +33,21 @@ Now in case of this little setup, our servo reacts whenever the humidity value e
 Looking at the code, you will notice that it basically consists of a cobination of both codes we were using for each device on its own. Only the loop function is a bit different and may look intimidating at first glance. No worries, we will have a closer look to understand whats happening:
 
 ```void setup(){}```
-<br>
 --> this code and the code above the setup function should look familiar, just in another order.
-
+<br>
 ```
 dht.temperature().getEvent(&event);
 const int temperature = event.temperature;
 dht.humidity().getEvent(&event);
 const int humidity = event.relative_humidity;
 ```
-<br>
 --> in this code block, we are saving the sensor readings for temperature and humidity in their own variable, so we can use it later on in our code.
-
+<br>
 ```
   const int HUMIDITY_THRESHOLD = 75;
 ```
-<br>
 --> with this line, we make a variable in which we save the number 75. This will be our threshold for the humidity value at which the servo should start reacting.
-
+<br>
 ```
  if (humidity >= HUMIDITY_THRESHOLD)
     {
@@ -62,7 +59,6 @@ const int humidity = event.relative_humidity;
       delay(100);
     }
 ```
-<br>
 --> in this if statement, we check if the humidity value is greater or equal to the threshold (the number 75). If yes, we drive the servo back and forth between 45 and 90 degrees.
 
 
