@@ -49,7 +49,7 @@ const int humidity = event.relative_humidity;
 `<br>
 --> with this line, we make a variable in which we save the number 75. This will be our threshold for the humidity value at which the servo should start reacting.
 
-`
+```
  if (humidity >= HUMIDITY_THRESHOLD)
     {
       // go to position 90
@@ -59,7 +59,8 @@ const int humidity = event.relative_humidity;
       myServo.write(45);
       delay(100);
     }
-`<br>
+```
+<br>
 --> in this if statement, we check if the humidity value is greater or equal to the threshold (the number 75). If yes, we drive the servo back and forth between 45 and 90 degrees.
 
 
