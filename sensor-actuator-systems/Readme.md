@@ -9,11 +9,22 @@ Now it's time to go one step further and connect what we learned about sensors w
 In order to do so, you should first recreate the basic circuit for the DHT22 temperature/humidity sensor as well as the basic circuit for the servo motor. You can find a summary of both in the respective folders on this repository. 
 
 Once you have both circuits set up again and you made sure that everything is connected the right way, we can combine both codes in order to make the sensor (DHT22) and the actuator (Servo) work at the same time.
-<br>
+<br><br>
 
 ![snesorActuatorSystem](https://github.com/user-attachments/assets/e8976c53-43eb-4ad3-a7ed-610a24073b6f)
 
+## Preparations
+
+- create a new project in VScode / Platform IO
+- add `monitor_speed = 9600` to your "platformio.ino" file
+- add both libraries for the DHT22 sensor and the servo motor to your project
+- go to the "ESP32-DHT22-SG90" folder in this repository and copy/paste the code inside the main.cpp file
+
 ## The Code
+
+Looking at the code, you will notice that it basically consists of a cobination of both codes we were using for each device on its own. Only the loop function is a bit different, and we will have a closer look to understand whats happening:
+
+
 
 
 
