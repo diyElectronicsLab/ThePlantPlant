@@ -3,7 +3,7 @@
 #include <DHT.h>
 #include <DHT_U.h>
 
-#define DHTPIN 33  // DATA pin
+#define DHTPIN 21  // DATA pin
 #define DHTTYPE  DHT22 // sensor version, we are using DHT22  
 
 DHT_Unified dht(DHTPIN, DHTTYPE);
